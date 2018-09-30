@@ -3,5 +3,11 @@ services:
   tunnelist:
     image: node:10-alpine
     working_dir: /app
+    network_mode: host
     volumes:
       - ./:/app
+    environment:
+      - NODE_OPTIONS=--experimental-modules
+      - NODE_NO_WARNINGS=1
+      - TUNNELIST_PORT=22222
+    command: ['npm', 'run', 'dev']

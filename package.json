@@ -4,12 +4,21 @@
   "description": "Open-source public tunneling for your localhost",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --delay 1 index.mjs"
   },
   "keywords": [
     "tunnel",
     "public"
   ],
   "author": "Le Phuong",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@types/ssh2": "^0.5.36",
+    "keypair": "^1.0.1",
+    "ssh2": "^0.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
 }
