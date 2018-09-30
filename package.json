@@ -1,0 +1,15 @@
+{
+  "name": "tunnelist",
+  "version": "0.0.1",
+  "description": "Open-source public tunneling for your localhost",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tunnel",
+    "public"
+  ],
+  "author": "Le Phuong",
+  "license": "MIT"
+}
