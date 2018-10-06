@@ -1,0 +1,8 @@
+sudo: required
+
+services:
+- docker
+  
+script:
+- docker-compose run --rm tunnelist npm run lint
+- docker-compose run --rm tunnelist npm run test
